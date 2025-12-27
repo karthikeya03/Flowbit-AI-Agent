@@ -306,7 +306,7 @@ flowbit-ai-agent/
 
 ---
 
-## 10. Setup & Usage  ✅ (FIXED)
+## 10. Setup & Usage 
 
 ### Install dependencies
 
