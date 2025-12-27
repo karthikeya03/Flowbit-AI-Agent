@@ -304,6 +304,18 @@ flowbit-ai-agent/
 └── README.md
 ```
 
+### Demo Runner Script
+
+For quick end-to-end demonstration of learning over time, a demo runner script is provided.
+
+This script automatically runs:
+1. The initial invoice to trigger learning (`INV-A-001`)
+2. The follow-up invoice to demonstrate recall (`INV-A-003`)
+
+```bash
+npm run demo
+```
+
 ### 10. Setup & Usage
 
 #### Install dependencies
