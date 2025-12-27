@@ -304,19 +304,17 @@ flowbit-ai-agent/
 └── README.md
 ```
 
----
+### 10. Setup & Usage
 
-## 10. Setup & Usage 
-
-### Install dependencies
+#### Install dependencies
 
 ```bash
 npm install
 ```
 
-### Step 1: Start with empty memory
+#### Step 1: Ensure memory starts empty
 
-Ensure `data/memory.json` is empty **before running the demo**:
+Verify `data/memory.json` is empty:
 
 ```json
 {
@@ -326,10 +324,10 @@ Ensure `data/memory.json` is empty **before running the demo**:
 }
 ```
 
-### Step 2: Run first invoice (Learning phase)
+#### Step 2: Run first invoice (Learning phase – INV-A-001)
 
 ```bash
-npm run start
+npm run start data/invoice1.json
 ```
 
 This run:
@@ -339,7 +337,7 @@ This run:
 * Simulates human approval
 * **Writes learned patterns into `memory.json`**
 
-### Step 3: Run follow-up invoice (Recall phase)
+#### Step 3: Run follow-up invoice (Recall phase – INV-A-003)
 
 ```bash
 npm run start data/invoice2.json
@@ -348,9 +346,44 @@ npm run start data/invoice2.json
 This run:
 
 * Recalls previously learned vendor memory
-* Applies corrections automatically
+* Auto-fills fields
 * Produces higher confidence decisions
 * Demonstrates reduced human intervention
+
+---
+
+#### Step 4: Run additional vendor scenarios (independent)
+
+The following invoices demonstrate **vendor-specific memory patterns** and **decision logic**.
+They are **independent scenarios** and do not depend on prior learning runs.
+
+##### Parts AG – VAT & Currency Handling
+
+```bash
+npm run start data/invoiceB1.json
+```
+
+**Expected behavior:**
+
+* Detects VAT-inclusive pricing (`MwSt. inkl.`)
+* Recomputes tax/gross values
+* Recovers missing currency (`EUR`) from raw text
+* Outputs proposed corrections with moderate confidence
+
+---
+
+##### Freight & Co – Skonto & Shipping Detection
+
+```bash
+npm run start data/invoiceC1.json
+```
+
+**Expected behavior:**
+
+* Detects Skonto payment terms
+* Identifies shipping-related descriptions
+* Maps descriptions to `FREIGHT` SKU
+* Flags known vendor patterns with explainable reasoning
 
 ---
 
