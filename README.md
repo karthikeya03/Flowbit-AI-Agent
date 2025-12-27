@@ -426,16 +426,47 @@ npm run start data/invoiceC1.json
 
 ## 13. Demo Evidence Checklist
 
-You must capture:
+### Memory Before Learning
+📸 **`memory.json` before first run**
 
-* 📸 `memory.json` **before first run**
-* 📸 Terminal output for `INV-A-001`
-* 📸 `memory.json` **after learning**
-* 📸 Terminal output for `INV-A-003`
-* 📸 One example each for:
+<img width="640" height="324" alt="memory json empty before learning" src="https://github.com/user-attachments/assets/d89c4705-8025-46a3-8cf9-dc63808a19c8" />
 
-  * Parts AG
-  * Freight & Co
+---
+
+### Initial Learning Run (INV-A-001)
+📸 **Terminal output for `INV-A-001`**
+
+<img width="772" height="931" alt="terminal output invoice A001" src="https://github.com/user-attachments/assets/f05fe295-d296-4deb-9ac4-2b91a86156da" />
+
+---
+
+### Memory After Learning
+📸 **`memory.json` after learning**
+
+<img width="794" height="605" alt="memory json after learning" src="https://github.com/user-attachments/assets/8ae86598-a926-446f-90d2-e4263358bee6" />
+
+---
+
+### Recall Run (INV-A-003)
+📸 **Terminal output for `INV-A-003`**
+
+<img width="823" height="948" alt="terminal output invoice A003" src="https://github.com/user-attachments/assets/bcda75b0-c81a-47d3-a162-201d5b765ab4" />
+
+---
+
+### Additional Vendor Scenarios
+
+#### Parts AG
+📸 **Terminal output – Parts AG**
+
+<img width="747" height="938" alt="terminal output parts ag" src="https://github.com/user-attachments/assets/4c355959-1fc1-4ce6-8ca7-2f950473a960" />
+
+---
+
+#### Freight & Co
+📸 **Terminal output – Freight & Co**
+
+<img width="782" height="933" alt="terminal output freight co" src="https://github.com/user-attachments/assets/d31bc6e3-7101-40eb-b850-c659bdc5eee3" />
 
 ---
 
