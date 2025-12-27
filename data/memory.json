@@ -1,18 +1,5 @@
 {
-  "vendorMemory": [
-    {
-      "vendor": "Supplier GmbH",
-      "learnedRule": "Filled serviceDate from Leistungsdatum",
-      "confidence": 0.8,
-      "learnedAt": "2025-12-27T06:45:00.976Z"
-    },
-    {
-      "vendor": "Supplier GmbH",
-      "learnedRule": "Filled serviceDate from Leistungsdatum",
-      "confidence": 0.8,
-      "learnedAt": "2025-12-27T06:45:12.268Z"
-    }
-  ],
+  "vendorMemory": [],
   "correctionMemory": [],
   "resolutionMemory": []
 }
