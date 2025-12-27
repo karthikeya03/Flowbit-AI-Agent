@@ -239,7 +239,7 @@ If confidence < 0.6 → HUMAN_REVIEW
 
 ```json
 {
-  "normalizedInvoice": { },
+  "normalizedInvoice": {},
   "proposedCorrections": [],
   "requiresHumanReview": false,
   "reasoning": "Decision made using rule-based memory logic",
@@ -284,25 +284,51 @@ flowbit-ai-agent/
 
 ---
 
-## 10. Setup & Usage
+## 10. Setup & Usage  ✅ (FIXED)
 
-### Install
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-### Run Initial Invoice (Learning)
+### Step 1: Start with empty memory
+
+Ensure `data/memory.json` is empty **before running the demo**:
+
+```json
+{
+  "vendorMemory": [],
+  "correctionMemory": [],
+  "resolutionMemory": []
+}
+```
+
+### Step 2: Run first invoice (Learning phase)
 
 ```bash
 npm run start
 ```
 
-### Run Follow-up Invoice (Recall)
+This run:
+
+* Detects missing fields
+* Applies rule-based corrections
+* Simulates human approval
+* **Writes learned patterns into `memory.json`**
+
+### Step 3: Run follow-up invoice (Recall phase)
 
 ```bash
 npm run start data/invoice2.json
 ```
+
+This run:
+
+* Recalls previously learned vendor memory
+* Applies corrections automatically
+* Produces higher confidence decisions
+* Demonstrates reduced human intervention
 
 ---
 
@@ -369,3 +395,4 @@ This system demonstrates:
 
 The implementation satisfies **all technical and evaluation criteria** defined in the Flowbit assignment.
 
+---
