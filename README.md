@@ -316,7 +316,7 @@ This script automatically runs:
 npm run demo
 ```
 
-### 10. Setup & Usage
+## 10. Setup & Usage
 
 #### Install dependencies
 
