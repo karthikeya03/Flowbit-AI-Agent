@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "ts-node index.ts"
+    "start": "ts-node index.ts",
+    "demo": "ts-node index.ts data/invoice1.json && ts-node index.ts data/invoice2.json"
   },
   "dependencies": {
     "ts-node": "^10.9.2"
