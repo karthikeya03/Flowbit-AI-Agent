@@ -190,7 +190,8 @@ If confidence < 0.6 → HUMAN_REVIEW
 * System flags issue
 * Human approves correction
 
-📸 *Screenshot required*:
+📸 *Screenshot*:
+<img width="790" height="237" alt="image" src="https://github.com/user-attachments/assets/5363d05d-ee33-46a4-a9dc-f52c79d031b2" />
 
 * `memory.json` empty
 * Output shows correction + learning
@@ -201,7 +202,8 @@ If confidence < 0.6 → HUMAN_REVIEW
 * No human review
 * Higher confidence
 
-📸 *Screenshot required*:
+📸 *Screenshot*:
+<img width="778" height="485" alt="image" src="https://github.com/user-attachments/assets/af1f05c2-348f-4ee4-b4dc-f278d5d0e54b" />
 
 * Updated `memory.json`
 * Cleaner output JSON
