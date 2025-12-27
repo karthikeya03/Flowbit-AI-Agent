@@ -1,0 +1,9 @@
+{
+  "invoiceNumber": "INV-B-001",
+  "vendor": "Parts AG",
+  "fields": {
+    "currency": null,
+    "taxIncluded": null
+  },
+  "rawText": "Prices incl. VAT (MwSt. inkl.) Currency: EUR"
+}

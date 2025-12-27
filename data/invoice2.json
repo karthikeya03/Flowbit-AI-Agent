@@ -1,0 +1,8 @@
+{
+  "invoiceNumber": "INV-A-003",
+  "vendor": "Supplier GmbH",
+  "fields": {
+    "serviceDate": null
+  },
+  "rawText": "Leistungsdatum: 18.01.2025"
+}

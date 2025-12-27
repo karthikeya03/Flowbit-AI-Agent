@@ -1,0 +1,11 @@
+{
+  "name": "flowbit-ai-agent",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
